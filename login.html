@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ログイン画面</title>
+    <!-- link 重要 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="container w-50 m-auto">
+      <form action="" method="post">
+        <!-- form-floating 在输入框里 显示内容 -->
+        <div class="mt-2 form-floating">
+          <!-- form-control 从上到下显示(竖条显示)-->
+            <input 
+              class="form-control border-0 border-bottom rounded-0" 
+              type="text" 
+              name="email" 
+              placeholder="test@yse.com" value="">
+            <label for="">Email</label>
+        </div>
+
+        <div class="mt-2 form-floating">
+            <!-- placeholder 输入框里显示信息提示 -->
+            <input
+              class="form-control border-0 border-bottom rounded-0" 
+              type="password"
+              name="password" 
+              placeholder="4文字以上の英数字">
+            <label for="">パスワード</label>
+        </div>
+
+        <!-- mt-2 按钮位置改变 mtのt是top的意思 / d-grid按钮变长-->
+        <div class="mt-2 d-grid">
+            <button class="btn btn-success">ログイン</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
