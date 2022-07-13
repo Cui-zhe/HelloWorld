@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザ登録</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <main class="container">
+    <!-- h2.text-center.p-5 -->
+    <h2 class="text-center p-5">ユーザ登録</h2>
+
+    <form action="" method="post">
+
+      <div class="row mb-3">
+
+        <div class="form-group col-md-6 mb-3">
+          <label class="form-label" for="inputName">氏名</label>
+          <!-- span.text-danger -->
+          <span class="text-danger">*</span>
+          <input id="inputName" class="form-control" type="text" name="name" required>
+        </div>
+
+        <div class="form-group col-md-6 mb-3">
+          <label class="form-label" for="inputEmail">Email</label>
+          <span class="text-danger">*</span>
+          <input id="inputEmail" class="form-control" type="email" name="email" required>
+        </div>
+
+      </div>
+
+      <div class="row mb-3">
+
+        <div class="form-group col-md-6 mb-3">
+          <label class="form-label" for="inputPassword">パスワード</label>
+          <span class="text-danger">*</span>
+          <input id="inputPassword" class="form-control" type="password" name="password" required>
+        </div>
+
+        <div class="form-group col-md-3 mb-3">
+          <label class="form-label" for="inputZip">郵便番号</label>
+          <span class="text-danger">*</span>
+          <input id="inputZip" class="form-control" type="text" name="zip" required>
+        </div>
+
+        <div class="form-group col-md-3 mb-3">
+          <label class="form-label" for="inputPrefecture">都道府県</label>
+          <span class="text-danger">*</span>
+          <select name="prefecture" id="" class="form-control">
+            <option value="12">千葉県</option>
+            <option value="13">東　京</option>
+            <option value="14">神奈川県</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+
+        <div class="form-group col-md-6 mb-3">
+          <label class="form-label" for="inputCity">市区町村</label>
+          <span class="text-danger">*</span>
+          <input id="inputName" class="form-control" type="text" name="name" required>
+        </div>
+
+        <div class="form-group col-md-6 mb-3">
+          <label class="form-label" for="inputAddress">町名番地</label>
+          <span class="text-danger">*</span>
+          <input id="inputEmail" class="form-control" type="email" name="email" required>
+        </div>
+
+      </div>
+
+      <div class="row mb-3">
+
+        <div class="form-group col-md-12 mb-3">
+          <label class="form-label" for="inputBulding">建物名・部屋番号</label>
+          <span class="text-danger">*</span>
+          <input id="inputName" class="form-control" type="text" name="name" required>
+        </div>
+      </div>
+
+      <p class="alert alert-warning">
+        ユーザー登録サービス利用規定/個人情報のを取り扱について
+      </p>
+
+      <div class="row mb-3">
+        <div class="form-group mb-3">
+          <input id="inputAgree" class="form-check-input" type="checkbox" name="agree">
+          <label for="inputAgree" class="form-check-label">同意する</label>
+        </div>
+      </div>
+
+      <div class="d-grid mb-3">
+        <button class="btn btn-dark">登録</button>
+      </div>
+
+    </form>
+
+  </main>
+</body>
+
+</html>
